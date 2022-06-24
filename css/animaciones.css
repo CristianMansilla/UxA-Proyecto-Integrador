@@ -37,27 +37,27 @@
 
 @keyframes moving {
     0%{
-        transform: translateX(20px);
+        transform: translateX(10px);
     }
 
     20%{
-        transform: translateX(-20px);
+        transform: translateX(-10px);
     }
 
     40%{
-        transform: translateX(40px);
+        transform: translateX(15px);
     }
 
     60%{
-        transform: translateX(-40px);
+        transform: translateX(-15px);
     }
 
     80%{
-        transform: translateX(60px);
+        transform: translateX(20px);
     }
 
     100%{
-        transform: translateX(-60px);
+        transform: translateX(-20px);
     }
 }
 
