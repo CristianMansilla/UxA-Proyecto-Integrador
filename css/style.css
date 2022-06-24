@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;700;900&display=swap');
+@import url(./menu.css);
+@import url(./animaciones.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font:'Kanit', sans-serif;
+    --blue: #141A32;
+    --blueLight:#0d1d35d7;
+    --white: #fff;
+    --celeste:#007AFF;
+}
+
+body{
+    font-family: var(--font);
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/** Nav **/
+header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue);
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header h1{
+    cursor: pointer;
+}
+
+header .container{
+    display: table;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+}
+
+.container  h1{
+    float: left;
+}
+
+/** Hero **/
+.hero{
+    margin-top: 50px;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: var(--white);
+}
+
+.hero h2{
+    font-size: 28px;
+}
+
+.hero a{
+    display: block;
+    width: 100px;
+    color: var(--white);
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 3px solid var(--white);
+    text-align: center;
+}
+
+.hero a:hover{
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+/** Bienvenida **/
+.bienvenida{
+    text-align: center;
+}
+
+.bienvenida p{
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+}
+
+/** Blog **/
+.blog .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog h3, h4{
+    text-align: center;
+}
+
+.blog article{
+    margin: 15px;
+}
+
+.card-imgcontainer{
+    width: 270px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-imgcontainer img{
+    /* margin: -20px; */
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 46px -6px rgba(0,0,0,1);
+}
+
+.card:hover{
+    /* border: 1px solid white;
+    border-radius: 10px; */
+    cursor: pointer;
+    box-shadow: 10px 10px 46px -3px var(--celeste);
+}
+
+.card:active{
+    box-shadow: 10px 10px 46px -3px rgb(75, 236, 0);
+}
+
+/** Info **/
+.info{
+    background-color: var(--blueLight);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+.info .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-pet{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-pet-imgcontainer{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid var(--white);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.info-pet-imgcontainer:hover{
+    transform: rotate(360deg);
+    transition: all 4s ease;
+}
+
+.info-pet-imgcontainer img{
+    margin: -20px;
+    width: 100%;
+    height: auto;
+}
+
+.info-pet h4{
+    background-color: var(--celeste);
+    /* margin: 0 auto; */
+    width: 100px;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.info-pet h4:hover{
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+
+/** Contacto **/
+.contacto .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ubicacion-caja{
+    display: flex;
+    margin: 20px 0;
+}
+
+.ubicacion-caja i{
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.ubicacion-caja i:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.ubicacion-caja h3:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.formulario{
+    background-color: var(--blueLight);
+    border: 1.5px solid var(--celeste);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-shadow: 10px 10px 46px -6px rgba(0, 0, 0, 1);
+}
+
+.formulario h2{
+    color: var(--white);
+}
+
+.formulario-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.formulario-items input{
+    font-size: 18px;
+    border: none;
+}
+
+.formulario-items textarea{
+    font-size: 18px;
+    resize: none;
+}
+.botonEnviar{
+    background-color: var(--celeste);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border: none;
+}
+
+.botonEnviar:hover{
+    background-color: rgba(0, 255, 128, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.botonEnviar:active{
+    transform: scale(0.99);
+}
+
+/** Footer **/
+footer{
+    background-color: var(--blue);
+    color: var(--white);
+    padding-top: 35px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+.copyright{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+.sociales i:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+/** Responsive **/
+@media (min-width:480px) {
+    .info-pet{
+        width: 40%;
+    }
+}
+
+/** Responsive Tablet **/
+@media (min-width:768px) {
+    .hero{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .hero img{
+        height: auto;
+        margin-top: -50px;
+    }
+
+    .hero h2{
+        font-size: 40px;
+    }
+
+    .hero a{
+        margin-top: 20px;
+    }
+
+    .ubicacion iframe{
+        width: 600px;
+    }
+    
+    .formulario{
+        width: 600px;
+    }
+
+    footer .container{
+        justify-content: space-between;
+    }
+
+    .sociales{
+        width: auto;
+    }
+}
+
+/** Responsive Desktop **/
+@media (min-width:1024px) {
+    .container{
+        width: 1000px;
+    }
+
+    .info-pet{
+        width: auto;
+    }
+
+    .ubicacion iframe{
+        width: 800px;
+    }
+
+    .formulario{
+        width: 800px;
+    }
+
+    .formulario h2{
+        font-size: 30px;
+    }
+}
