@@ -143,4 +143,9 @@ header  label{
     header  label{
         display: none;
     }
+
+    #menu-toggle:checked ~ .x{
+        display: none;
+        transition: all 1s ease;
+    }
 }
